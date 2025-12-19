@@ -81,4 +81,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: android-tools-linux
-          path: out/usr/local/bin/*
+          path: out/home/runner/work/android-tools/android-tools/install/bin/*
+
