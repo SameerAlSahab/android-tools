@@ -20,6 +20,11 @@ jobs:
         with:
           submodules: true
 
+      - name: Configure Git identity for CI
+        run: |
+         git config --global user.email "sameeralsahab@gmail.com"
+         git config --global user.name "SameerAlSahab"
+
       - name: Install dependencies
         run: |
           sudo apt-get update
