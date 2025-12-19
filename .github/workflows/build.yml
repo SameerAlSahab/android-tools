@@ -72,10 +72,10 @@ jobs:
 
       - name: Verify binaries
         run: |
-          ./out/usr/local/bin/adb version
-          ./out/usr/local/bin/fastboot --version
-          ./out/usr/local/bin/lpdump --help
-          ./out/usr/local/bin/lpmake --help
+          BIN=out/home/runner/work/android-tools/android-tools/install/bin
+          $BIN/adb version
+          $BIN/fastboot --version
+          $BIN/lpdump --help
 
       - name: Upload Linux binaries
         uses: actions/upload-artifact@v4
